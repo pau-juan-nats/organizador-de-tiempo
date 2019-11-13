@@ -12,10 +12,10 @@ count_global = 0
 
 
 def Grafica():
-    """ 
-    Esta funcion pregunta al usuario la cantidad de temas que debe estudiar para poder hacer el calculo. 
+    """
+    Esta funcion pregunta al usuario la cantidad de temas que debe estudiar para poder hacer el calculo.
     Genera un boton que redirecciona a la funcion de Pomodoros.
-    La funcion Grafica es la funcion principal que llama a todas las demas funciones.  
+    La funcion Grafica es la funcion principal que llama a todas las demas funciones.
     """
     pregunta = "¿Cuántos temas tiene la asignatura que deseas estudiar?"
     etiqueta = Label(text=pregunta, font= ("Verdana",15),background="white").place(x=0, y=10)
@@ -62,7 +62,7 @@ def Temas(i, m, y):
 
 
 def Pomodoros(parametro, i, y):
-    """ 
+    """
     Esta funcion tiene como parametro param, i, y. "param" el cual es lo que le usuario escribe para poder hacer la comparacion de "facil", "medio" o "dificil"; "i"  "i" que es la varible de la iteracion, ya que esta funcion va necesariamente conectada para que se
     realice por cada tema la pregunta indica; "y" la necesitamos para generalizar los espacios del campo
     """
@@ -118,8 +118,8 @@ def Horario(c):
     cont3 = 0
     etiqueta6 = Label(text="Horario",relief=RIDGE, width=15).grid(row=0, column=0)
     """
-    Este for lo que hace es que para todos los elementos en la lista horas, primero se cree un label, y la coordenada de la fila se vaya sumando una para 
-    cada elemento, para que asi queden todas las horas de arriba a abajo en la primera columna.  
+    Este for lo que hace es que para todos los elementos en la lista horas, primero se cree un label, y la coordenada de la fila se vaya sumando una para
+    cada elemento, para que asi queden todas las horas de arriba a abajo en la primera columna.
     """
     for i in Horas:
         Label(text=i, relief=RIDGE, width=15).grid(row=1+cont1,column=0)
@@ -132,16 +132,16 @@ def Horario(c):
         Entry(relief=SUNKEN, width=15).grid(row=1+cont1,column=7)
         cont1 = cont1 + 1
     """
-    El mismo proceso del for anterior se repite con los entry. 
+    El mismo proceso del for anterior se repite con los entry.
     """
     for i in Dias:
         Label(text=i, relief=RIDGE, width=15).grid(row=0,column=1+cont2)
         cont2 = cont2 + 1
     Label(text=c, relief=RIDGE, width= 109).grid(row=2+cont1,columnspan=7,column=1)
-    
-  
-    
-    
+
+
+
+
 
 Grafica()
 root.mainloop()
