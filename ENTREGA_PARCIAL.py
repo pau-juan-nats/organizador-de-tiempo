@@ -6,7 +6,7 @@ pomodorodificil = 8
 
 pregunta = int(input("¿Cuántos temas tiene la asignatura que deseas estudiar?\n"))
 c = 0
-""" 
+"""
 Aqui pregunta la dificultad de los temas de la asignatura.
 """
 for i in range(pregunta):
@@ -22,8 +22,8 @@ for i in range(pregunta):
             tiempo_pomodoro = (25*pomodorodificil)
             print("En el tema {0} debes estudiar".format(i+1), tiempo_pomodoro," minutos y recuerda que cada 100 minutos descansas 25 minutos.")
         c += tiempo_pomodoro
-    
-    
+
+
 print("La cantidad de minutos que vas a dedicar a estudiar para esta asignatura son ", c)
 
 """
